@@ -22,7 +22,6 @@ h2 {
     margin-top: -25px;
     height: 40px;
     padding-top: 5px;
-   
 }
 
 nav{
@@ -30,7 +29,6 @@ nav{
     position: absolute;
     top: 20px;
     right: 20px;
-    
 }
 
 nav>a {
@@ -44,7 +42,6 @@ nav>a {
     margin: 10px;
     border: 1px solid black;
     box-shadow: 2px 2px 2px black;
-    
 }
 
 a[href*="#"]{

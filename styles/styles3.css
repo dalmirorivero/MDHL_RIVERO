@@ -55,18 +55,12 @@ section{
     position: relative;
     display: flex;
     flex-direction: column;
-    /* position: relative; */
     padding-bottom: 20px;
     padding-top: 20px;
 }
 
-/* #foto {
-   display: none;
-} */
-
 #foto{
     position: absolute;
-    
     top: 10%;
     right: 5%;
 }
@@ -79,20 +73,15 @@ section{
 
 h2{
     width: 50%;
-margin-left: 40px;
-text-align: center;
-padding: 10px;}
-
-
-/* article{
+    margin-left: 40px;
     text-align: center;
-    padding: 10px;
-} */
+    padding: 10px;}
+
 article{
-   width: 50%;
-margin-left: 40px;
-text-align: center;
-padding: 10px;}
+    width: 50%;
+    margin-left: 40px;
+    text-align: center;
+    padding: 10px;}
 
 li{
     list-style: none;
