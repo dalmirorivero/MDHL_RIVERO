@@ -66,7 +66,7 @@ nav {
     text-align: center;
     display: flex;
     justify-content: space-around;
-    border: 2px solid black;
+    border: 2px solid #73777B;
     box-shadow: 0 4px 10px -2px black;
     height: 40px;
     padding-top: 10px;
@@ -79,6 +79,21 @@ a {
 
 a[href*="#"] {
     color: black;
+}
+
+caption {
+    caption-side: top;
+    font-style: oblique;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: start;
 }
 
 p {
@@ -108,11 +123,20 @@ li>ol>li {
     text-align: center;
 }
 
+fieldset>p{
+    display: inline;
+    text-align: initial;
+    margin:0px;
+    align-self: baseline;
+}
+
+
 footer>figure {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;
     align-items: flex-end;
+    flex-wrap: wrap;
 }
 
 table {
@@ -129,17 +153,10 @@ td {
     padding: 4px;
 }
 
-caption {
-    caption-side: top;
-    font-style: oblique;
-    text-decoration: underline;
-    margin-bottom: 10px;
-}
-
 .hockey {
-    border: 2px solid black;
+    border: 2px solid #73777B;
     box-shadow: 0 4px 10px -2px black;
-    margin: 20px;
+    margin: 2%;
     width: 500px;
 }
 
@@ -162,3 +179,12 @@ caption {
     flex-direction: row;
     justify-content: space-around;
 }
+
+.maps{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
