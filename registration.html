@@ -34,31 +34,31 @@
         <h2>REGISTRATION FORM</h2>
       </section>
       <form action="./show_data.html">
-        <fieldset>
+        <fieldset class="field">
           <fieldset>
-            <label for="nombre">Nombre del jugador:</label>
-            <input type="text" id="nombre" name="nombre" />
-            <label for="apellido">Apellido:</label>
-            <input type="text" id="apellido" name="apellido" />
+            <label for="name">Player First Name:</label>
+            <input type="text" id="name" name="Name" />
+            <label for="apellido">Last Name:</label>
+            <input type="text" id="apellido" name="Lastname" />
           </fieldset>
           <fieldset>
-            <label for="direccion">Direccion:</label>
-            <input type="text" id="direccion" name="direccion" />
+            <label for="adress">Street Adress:</label>
+            <input type="text" id="adress" name="Adress" />
           </fieldset>
           <fieldset>
-            <label for="ciudad">Ciudad:</label>
-            <input type="text" id="ciudad" name="ciudad" />
-            <label for="cp">CP:</label>
-            <input type="number" name="cp" id="cp" />
+            <label for="city">City:</label>
+            <input type="text" id="city" name="City" />
+            <label for="zp">Zip Code:</label>
+            <input type="number" name="ZP" id="zp" />
           </fieldset>
           <fieldset>
             <label for="birth">Birth Date: </label>
-            <input type="date" name="birth" id="birth" />
+            <input type="date" name="Birth" id="birth" />
             <p>Gender:</p>
-            <label for="female">  Female </label>
-            <input type="radio" name="gen" id="female" value="female" />
+            <label for="female"> Female </label>
+            <input type="radio" name="Gender" id="female" value="female" />
             <label for="male"> Male </label>
-            <input type="radio" name="gen" id="male" value="male" />
+            <input type="radio" name="Gender" id="male" value="male" />
           </fieldset>
           <fieldset>
             <p>Grade:</p>
@@ -114,23 +114,21 @@
           </fieldset>
           <h3>Uniform size:</h3>
           <fieldset>
-            <input type="radio" name="Size" id="YS" value="Youth Small" />
-            <label for="YS">Youth Small</label>
-            <input type="radio" name="Size" id="YM" value="Youth Medium" />
-            <label for="YM">Youth Medium</label>
-            <input type="radio" name="Size" id="YL" value="Youth Large" />
-            <label for="YL">Youth Large</label>
-            <input type="radio" name="Size" id="S" value="Small" />
-            <label for="S">Small</label>
-            <input type="radio" name="Size" id="M" value="Medium" />
-            <label for="M">Medium</label>
-            <input type="radio" name="Size" id="L" value="Large" />
-            <label for="L">Large</label>
-            <input type="radio" name="Size" id="XL" value="X Large" />
-            <label for="XL">X Large</label>
+            <select id="size" name="Size">
+              <option value="" disabled selected hidden>
+                Please select your size
+              </option>
+              <option value="YS">Youth Small</option>
+              <option value="YM">Youth Medium</option>
+              <option value="YL">Youth Large</option>
+              <option value="S">Small</option>
+              <option value="M">Medium</option>
+              <option value="L">Large</option>
+              <option value="XL">Extra-large</option>
+            </select>
           </fieldset>
           <h3>Permission to Play</h3>
-          <p>
+          <p class="parent">
             I, the parent or guardian of the minor registrant, agree that the
             registrant and i will abide by all the rules of the Mighty Ducks
             Hockey League (MDHL). In recognizing the possibility of physical
@@ -147,6 +145,9 @@
             and agree to its terms
           </p>
           <fieldset>
+            <legend>
+              *by entering your name below, you are hereby authorizing the form
+            </legend>
             <label for="signature">Parent/Guardian signature:</label>
             <input type="text" id="signature" name="Signature" />
           </fieldset>
@@ -154,8 +155,8 @@
             <label for="date">Date:</label>
             <input type="date" id="date" name="Date" />
           </fieldset>
+          <input type="submit" value="SUBMIT" />
         </fieldset>
-        <input type="submit" value="submit" />
       </form>
     </main>
     <footer>

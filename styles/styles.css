@@ -94,6 +94,7 @@ form{
     text-align: center;
     align-items: center;
     justify-content: start;
+    flex-wrap: wrap;
 }
 
 p {
@@ -135,7 +136,7 @@ fieldset>p{
     display: inline;
     text-align: initial;
     margin:0px;
-    align-self: baseline;
+    
 }
 
 iframe{
@@ -188,15 +189,29 @@ td {
 }
 
 .maps{
+    align-items: center;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
+    justify-content: center;
+}
+
+.parent{
+    display: block;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.field{
+    border: 1px #73777B solid;
+    border-radius: 10px;
+    width: 80%;
 }
 
 legend {
-padding-top: 20px;
+    font-style: oblique;
+    font-weight: bold;
+    padding-top: 20px;
 }
 
 fieldset{
@@ -204,24 +219,16 @@ fieldset{
     padding: 1%;
 }
 
-fieldset>p{
-    margin-right: 10px;
+input#adress{
+    width: 30%;
 }
 
-fieldset>h3{
-    margin-bottom: 20px;
+input#city{
+    width: 24%;
 }
 
-input#direccion{
-    width: 415px;
-}
-
-input#ciudad{
-    width: 300px;
-}
-
-input#cp{
-    width: 100px;
+input#zp{
+    width: 5%;
 }
 
 input#birth{
@@ -235,6 +242,18 @@ input#female{
 }
 
 input#male{
-    
     margin-left: 5px;
 }
+
+input[type="submit" i]{
+    font-weight: bolder;
+    border: none;
+    cursor: grab;
+    border-radius: 10px ;
+    height: 40px;
+    width: 50%;
+    background-color: #73777B;    
+        box-shadow: 5px 5px 10px #a8a8a8,
+                    -5px -5px 10px #ffffff;
+}
+
