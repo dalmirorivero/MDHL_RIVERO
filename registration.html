@@ -28,6 +28,17 @@
         <a href="./game_info.html">Game Info</a>
         <a href="#">Registration</a>
       </nav>
+      <div class="dropdown">
+        <button class="dropdown-btn">MENU</button>
+        <div class="dropdown-menu">
+          <a href="./index.html">Home</a>
+          <a href="./aboutMDHL.html">About MDHL</a>
+          <a href="./contact.html">Contact</a>
+          <a href="./rules.html">Rules of Play</a>
+          <a href="./game_info.html">Game Info</a>
+          <a href="#">Registration Form</a>
+        </div>
+      </div>
     </header>
     <main>
       <section>
@@ -54,13 +65,15 @@
           <fieldset>
             <label for="birth">Birth Date: </label>
             <input type="date" name="Birth" id="birth" />
+          </fieldset>
+          <fieldset class="gender">
             <p>Gender:</p>
             <label for="female"> Female </label>
             <input type="radio" name="Gender" id="female" value="female" />
             <label for="male"> Male </label>
             <input type="radio" name="Gender" id="male" value="male" />
           </fieldset>
-          <fieldset>
+          <fieldset class="grade">
             <p>Grade:</p>
             <input type="radio" name="Grade" id="grade" value="Pre-School" />
             <label for="grade">Pre-School</label>
@@ -76,7 +89,7 @@
             <label for="fifth">5th</label>
           </fieldset>
           <h3>Which elementary school do you live near?</h3>
-          <fieldset>
+          <fieldset class="school">
             <legend>Closest School:</legend>
             <input type="radio" name="School" id="AJ" value="AJ Katzenmaier" />
             <label for="AJ">AJ Katzenmaier</label>
@@ -102,7 +115,7 @@
             <label for="SE">South Elementary</label>
           </fieldset>
           <h3>What position(s) do you normally play? (check all that apply)</h3>
-          <fieldset>
+          <fieldset class="position">
             <input type="checkbox" name="Position" id="F" value="Forward" />
             <label for="F">Forward</label>
             <input type="checkbox" name="Position" id="D" value="Defense" />
